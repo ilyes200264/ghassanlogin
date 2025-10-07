@@ -2,10 +2,13 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, LogIn, User, Loader2 } from "lucide-react"
+import { useAuth } from "@/components/auth-provider"
+import Link from "next/link"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { user, loading } = useAuth()
 
   return (
     <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b border-border">
@@ -44,6 +47,26 @@ export function Navigation() {
               >
                 Contact
               </a>
+              {loading ? (
+                <Button variant="outline" size="sm" className="ml-4" disabled>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Chargement...
+                </Button>
+              ) : user ? (
+                <Link href="/dashboard">
+                  <Button variant="outline" size="sm" className="ml-4">
+                    <User className="h-4 w-4 mr-2" />
+                    Dashboard
+                  </Button>
+                </Link>
+              ) : (
+                <Link href="/login">
+                  <Button variant="outline" size="sm" className="ml-4">
+                    <LogIn className="h-4 w-4 mr-2" />
+                    Login
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
 
@@ -84,6 +107,32 @@ export function Navigation() {
             >
               Contact
             </a>
+            {loading ? (
+              <div className="pt-2 border-t border-border">
+                <Button variant="outline" size="sm" className="w-full" disabled>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Chargement...
+                </Button>
+              </div>
+            ) : user ? (
+              <div className="pt-2 border-t border-border">
+                <Link href="/dashboard">
+                  <Button variant="outline" size="sm" className="w-full">
+                    <User className="h-4 w-4 mr-2" />
+                    Dashboard
+                  </Button>
+                </Link>
+              </div>
+            ) : (
+              <div className="pt-2 border-t border-border">
+                <Link href="/login">
+                  <Button variant="outline" size="sm" className="w-full">
+                    <LogIn className="h-4 w-4 mr-2" />
+                    Login
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       )}
