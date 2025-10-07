@@ -120,7 +120,7 @@ export default function DashboardPage() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-foreground">{user.email}</div>
+              <div className="text-2xl font-bold text-foreground break-words break-all max-w-full">{user.email}</div>
               <p className="text-xs text-muted-foreground mt-1">
                 Compte vérifié
               </p>

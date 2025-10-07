@@ -98,14 +98,14 @@ export default function LoginPage() {
                         anchorBottomMargin: '0.5rem',
                         emailInputMargin: '0.5rem',
                         socialAuthSpacing: '0.5rem',
-                        buttonPadding: '0.75rem 1rem',
+                        buttonPadding: '0.875rem 1rem',
                         inputPadding: '0.75rem 1rem',
                       },
                       fontSizes: {
                         baseBodySize: '14px',
                         baseInputSize: '14px',
                         baseLabelSize: '14px',
-                        baseButtonSize: '14px',
+                        baseButtonSize: '15px',
                       },
                       fonts: {
                         bodyFontFamily: 'inherit',
@@ -114,15 +114,23 @@ export default function LoginPage() {
                         labelFontFamily: 'inherit',
                       },
                       borderWidths: {
-                        buttonBorderWidth: '1px',
+                        buttonBorderWidth: '0px',
                         inputBorderWidth: '1px',
                       },
                       radii: {
-                        borderRadiusButton: '0.5rem',
-                        buttonBorderRadius: '0.5rem',
+                        borderRadiusButton: '0.75rem',
+                        buttonBorderRadius: '0.75rem',
                         inputBorderRadius: '0.5rem',
                       },
                     },
+                  },
+                  className: {
+                    container: 'space-y-4',
+                    button: 'bg-primary text-primary-foreground hover:bg-primary/90 h-11 font-medium w-full',
+                    input: 'bg-background border-border h-11',
+                    label: 'text-foreground',
+                    anchor: 'text-primary hover:underline',
+                    loader: 'text-primary',
                   },
                 }}
                 providers={[]}
