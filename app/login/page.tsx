@@ -127,8 +127,8 @@ export default function LoginPage() {
                   },
                   className: {
                     container: 'space-y-4',
-                    button: 'mt-2 h-11 min-h-[44px] w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg shadow-sm focus:ring-2 focus:ring-primary/40 focus:outline-none',
-                    input: 'h-11 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary/30',
+                    button: 'mt-2 h-11 min-h-[44px] w-full bg-primary text-white hover:bg-primary/90 rounded-lg shadow-sm focus:ring-2 focus:ring-primary/40 focus:outline-none font-semibold',
+                    input: 'h-11 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary/30 text-foreground placeholder:text-muted-foreground',
                     label: 'text-foreground',
                     anchor: 'text-primary hover:underline',
                     loader: 'text-primary',
