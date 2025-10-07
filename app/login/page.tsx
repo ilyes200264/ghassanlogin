@@ -63,9 +63,10 @@ export default function LoginPage() {
               </div>
             </CardHeader>
             
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-6 pb-6">
               <Auth
                 supabaseClient={supabase}
+                view="sign_in"
                 appearance={{
                   theme: ThemeSupa,
                   variables: {
@@ -126,8 +127,8 @@ export default function LoginPage() {
                   },
                   className: {
                     container: 'space-y-4',
-                    button: 'bg-primary text-primary-foreground hover:bg-primary/90 h-11 font-medium w-full',
-                    input: 'bg-background border-border h-11',
+                    button: 'mt-2 h-11 min-h-[44px] w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg shadow-sm focus:ring-2 focus:ring-primary/40 focus:outline-none',
+                    input: 'h-11 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary/30',
                     label: 'text-foreground',
                     anchor: 'text-primary hover:underline',
                     loader: 'text-primary',
