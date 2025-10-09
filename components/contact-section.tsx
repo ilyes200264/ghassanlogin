@@ -11,7 +11,8 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Contactez-Nous</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            N'hésitez pas à nous contacter pour toute question ou pour en savoir plus sur nos services
+            N'hésitez pas à nous contacter pour toute question ou pour en savoir plus sur nos services.
+            <span className="block mt-2 font-semibold text-primary">Le meilleur moyen de nous joindre est par email.</span>
           </p>
         </div>
 
@@ -52,7 +53,7 @@ export function ContactSection() {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Email (Meilleur moyen de contact)</h4>
                     <p className="text-muted-foreground">Email à venir</p>
                   </div>
                 </div>

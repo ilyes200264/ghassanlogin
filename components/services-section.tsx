@@ -4,32 +4,18 @@ import { BookOpen, Heart, Users, HandHeart, GraduationCap, Calendar } from "luci
 const services = [
   {
     icon: BookOpen,
-    title: "Cours d'Arabe",
-    description: "Apprentissage de la langue arabe pour enfants et adultes, du niveau débutant au niveau avancé.",
+    title: "Cours d'Arabe et de Coran",
+    description: "Apprentissage de la langue arabe pour enfants et adultes, du niveau débutant au niveau avancé. Mémorisation et récitation du Coran avec apprentissage des règles de Tajwid.",
     details: [
       "Cours pour enfants et jeunes",
       "Apprentissage de l'alphabet",
       "Grammaire et vocabulaire",
       "Expression orale et écrite",
+      "Mémorisation du Coran",
+      "Règles de Tajwid",
+      "Valeurs islamiques",
+      "Encadrement spirituel",
     ],
-  },
-  {
-    icon: GraduationCap,
-    title: "Cours de Coran",
-    description: "Mémorisation et récitation du Coran avec apprentissage des règles de Tajwid.",
-    details: ["Mémorisation du Coran", "Règles de Tajwid", "Valeurs islamiques", "Encadrement spirituel"],
-  },
-  {
-    icon: Heart,
-    title: "Mariages Religieux",
-    description: "Célébration de mariages selon les traditions islamiques avec accompagnement complet.",
-    details: ["Cérémonie religieuse", "Conseil pré-matrimonial", "Documentation", "Accompagnement spirituel"],
-  },
-  {
-    icon: HandHeart,
-    title: "Aide Communautaire",
-    description: "Soutien et entraide pour les familles dans le besoin et les nouveaux arrivants.",
-    details: ["Aide alimentaire", "Soutien aux familles", "Accompagnement administratif", "Orientation sociale"],
   },
   {
     icon: Users,

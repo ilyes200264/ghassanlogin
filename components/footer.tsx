@@ -15,10 +15,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Cours d'Arabe</li>
-              <li>Cours de Coran</li>
-              <li>Mariages Religieux</li>
-              <li>Aide Communautaire</li>
+              <li>Cours d'Arabe et de Coran</li>
               <li>Activités Jeunesse</li>
               <li>Événements</li>
             </ul>

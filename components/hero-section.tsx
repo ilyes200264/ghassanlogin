@@ -1,5 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Clock } from "lucide-react"
+import { MapPin, Phone, Clock, Heart } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -17,6 +19,15 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="text-lg px-8 py-3">
               Découvrir nos services
+            </Button>
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="text-lg px-8 py-3 bg-primary hover:bg-primary/90"
+              onClick={() => document.getElementById('donation')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Heart className="mr-2 h-5 w-5" />
+              Faire un don
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-3 bg-transparent">
               Nous contacter

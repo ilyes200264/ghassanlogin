@@ -10,7 +10,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Centre Communautaire de Salaberry - Services Islamiques à Montréal",
   description:
-    "Centre communautaire musulman offrant cours d'arabe, cours de Coran, mariages religieux et aide communautaire à Montréal, Québec.",
+    "Centre communautaire musulman offrant cours d'arabe, cours de Coran et activités pour la communauté à Montréal, Québec.",
   generator: "v0.app",
 }
 
